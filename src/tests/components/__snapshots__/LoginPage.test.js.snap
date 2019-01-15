@@ -17,22 +17,94 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <button>
-        Login
-</button>,
+      "children": Array [
+        <div
+          className="box-layout__box"
+>
+          <h1
+                    className="box-layout__title"
+          >
+                    Expensify
+          </h1>
+          <p>
+                    It's time to get your expenses under control.
+          </p>
+          <button
+                    className="button"
+          >
+                    Login with Google
+          </button>
+</div>,
+        ">",
+      ],
+      "className": "box-layout",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "Login",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="box-layout__title"
+>
+              Expensify
+</h1>,
+            <p>
+              It's time to get your expenses under control.
+</p>,
+            <button
+              className="button"
+>
+              Login with Google
+</button>,
+          ],
+          "className": "box-layout__box",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Expensify",
+              "className": "box-layout__title",
+            },
+            "ref": null,
+            "rendered": "Expensify",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "It's time to get your expenses under control.",
+            },
+            "ref": null,
+            "rendered": "It's time to get your expenses under control.",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Login with Google",
+              "className": "button",
+            },
+            "ref": null,
+            "rendered": "Login with Google",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
-      "ref": null,
-      "rendered": "Login",
-      "type": "button",
-    },
+      ">",
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -41,22 +113,94 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <button>
-          Login
-</button>,
+        "children": Array [
+          <div
+            className="box-layout__box"
+>
+            <h1
+                        className="box-layout__title"
+            >
+                        Expensify
+            </h1>
+            <p>
+                        It's time to get your expenses under control.
+            </p>
+            <button
+                        className="button"
+            >
+                        Login with Google
+            </button>
+</div>,
+          ">",
+        ],
+        "className": "box-layout",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Login",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="box-layout__title"
+>
+                Expensify
+</h1>,
+              <p>
+                It's time to get your expenses under control.
+</p>,
+              <button
+                className="button"
+>
+                Login with Google
+</button>,
+            ],
+            "className": "box-layout__box",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Expensify",
+                "className": "box-layout__title",
+              },
+              "ref": null,
+              "rendered": "Expensify",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "It's time to get your expenses under control.",
+              },
+              "ref": null,
+              "rendered": "It's time to get your expenses under control.",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Login with Google",
+                "className": "button",
+              },
+              "ref": null,
+              "rendered": "Login with Google",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
-        "ref": null,
-        "rendered": "Login",
-        "type": "button",
-      },
+        ">",
+      ],
       "type": "div",
     },
   ],
