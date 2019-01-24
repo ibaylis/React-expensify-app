@@ -1,24 +1,104 @@
 import * as firebase from 'firebase';
 
 const config = {
-  apiKey: "AIzaSyD-6mpgxh6BhRTpcuthFr7y7FBqjMNkn5k",
-  authDomain: "expensify-react-crud-app-ib.firebaseapp.com",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
   databaseURL: "https://expensify-react-crud-app-ib.firebaseio.com",
-  projectId: "expensify-react-crud-app-ib",
-  storageBucket: "expensify-react-crud-app-ib.appspot.com",
-  messagingSenderId: "993221135673"
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
   };
 
   firebase.initializeApp(config);
 
   const database = firebase.database();
 
+  export { firebase, database as default };
 
 
-  database.ref().on('value', (snapshot) => {
-    const val = snapshot.val();
-    console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`);
-  })
+
+
+
+
+
+// //child_removed - gets fired when one of the entries are removed
+//   database.ref('expenses').on('child_removed', (snapshot) => {
+//     console.log(snapshot.key, snapshot.val());
+//   });
+
+
+// // child_changed - gets fired when one of the entries are changed
+//   database.ref('expenses').on('child_changed', (snapshot) => {
+//     console.log(snapshot.key, snapshot.val());
+//   });
+
+//   // child_added - gets fired when an entry is added for new and old entries
+//   database.ref('expenses').on('child_added', (snapshot) => {
+//     console.log(snapshot.key, snapshot.val());
+//   });
+
+  // database.ref('expenses').on('value', (snapshot) => {
+  //   const expenses = [];
+
+  //   snapshot.forEach((childSnapshot) => {
+  //     expenses.push({
+  //       id: childSnapshot.key,
+  //       ...childSnapshot.val()
+  //     });
+  //   });
+
+  //   console.log(expenses);
+  // });
+
+
+  // database.ref('expenses')
+  //   .once('value')
+  //   .then((snapshot) => {
+  //     const expenses = [];
+  //     //iterate over the items in the expenses array and creating new item in the array for each item
+
+  //     snapshot.forEach((childSnapshot) => {
+  //       expenses.push({
+  //         id: childSnapshot.key,
+  //         ...childSnapshot.val()
+  //       });
+  //     });
+
+  //     console.log(expenses);
+  //   });
+
+  // database.ref('expenses').push({
+  //   description: 'Rent',
+  //   note: '',
+  //   amount: 109500,
+  //   createdAt: 9938917873746
+  // });
+
+  // database.ref('expenses').push({
+  //   description: 'Phone bill',
+  //   note: '',
+  //   amount: 5900,
+  //   createdAt: 9938917873746
+  // });
+
+  // database.ref('expenses').push({
+  //   description: 'Food',
+  //   note: '',
+  //   amount: 1200,
+  //   createdAt: 9938917873746
+  // });
+
+  // database.ref('expenses').push({
+  //   description: 'Car Note',
+  //   note: '',
+  //   amount: 25600,
+  //   createdAt: 9938917873746
+  // });
+
+  // database.ref().on('value', (snapshot) => {
+  //   const val = snapshot.val();
+  //   console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`);
+  // })
 
 
 
